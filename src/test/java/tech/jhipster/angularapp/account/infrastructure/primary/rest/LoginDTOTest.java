@@ -3,8 +3,8 @@ package tech.jhipster.angularapp.account.infrastructure.primary.rest;
 import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import tech.jhipster.angularapp.UnitTest;
 import org.junit.jupiter.api.Test;
+import tech.jhipster.angularapp.UnitTest;
 
 @UnitTest
 class LoginDTOTest {

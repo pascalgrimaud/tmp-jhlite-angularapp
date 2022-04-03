@@ -6,15 +6,13 @@ describe('App Component', () => {
   let comp: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
 
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        declarations: [AppComponent],
-      })
-        .overrideTemplate(AppComponent, '')
-        .compileComponents();
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [AppComponent],
     })
-  );
+      .overrideTemplate(AppComponent, '')
+      .compileComponents();
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AppComponent);
@@ -30,5 +28,4 @@ describe('App Component', () => {
       expect(comp.appName).toEqual('angularapp');
     });
   });
-
 });

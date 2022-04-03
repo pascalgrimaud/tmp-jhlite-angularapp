@@ -2,8 +2,6 @@ package tech.jhipster.angularapp.security.jwt.infrastructure.config;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import tech.jhipster.angularapp.UnitTest;
-import tech.jhipster.angularapp.security.jwt.domain.AuthoritiesConstants;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
@@ -21,6 +19,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.test.util.ReflectionTestUtils;
+import tech.jhipster.angularapp.UnitTest;
+import tech.jhipster.angularapp.security.jwt.domain.AuthoritiesConstants;
 
 @UnitTest
 class TokenProviderTest {

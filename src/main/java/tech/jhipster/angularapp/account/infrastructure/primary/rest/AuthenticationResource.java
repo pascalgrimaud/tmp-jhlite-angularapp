@@ -1,8 +1,6 @@
 package tech.jhipster.angularapp.account.infrastructure.primary.rest;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import tech.jhipster.angularapp.security.jwt.infrastructure.config.JWTFilter;
-import tech.jhipster.angularapp.security.jwt.infrastructure.config.TokenProvider;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.slf4j.Logger;
@@ -15,6 +13,8 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
+import tech.jhipster.angularapp.security.jwt.infrastructure.config.JWTFilter;
+import tech.jhipster.angularapp.security.jwt.infrastructure.config.TokenProvider;
 
 @RestController
 @RequestMapping("/api/authenticate")

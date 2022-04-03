@@ -3,8 +3,6 @@ package tech.jhipster.angularapp.security.jwt.infrastructure.config;
 import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import tech.jhipster.angularapp.UnitTest;
-import tech.jhipster.angularapp.security.jwt.domain.AuthoritiesConstants;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import java.util.Collections;
@@ -18,6 +16,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.test.util.ReflectionTestUtils;
+import tech.jhipster.angularapp.UnitTest;
+import tech.jhipster.angularapp.security.jwt.domain.AuthoritiesConstants;
 
 @UnitTest
 class JWTFilterTest {

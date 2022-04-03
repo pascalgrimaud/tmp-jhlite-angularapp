@@ -214,6 +214,5 @@ class ExceptionTranslatorIT {
       .andExpect(jsonPath("$.message").value("error.http.500"))
       .andExpect(jsonPath("$.title").value("Internal Server Error"));
   }
-
   // jhipster-needle-exception-translator-it
 }
