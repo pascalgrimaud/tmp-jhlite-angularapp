@@ -1,0 +1,29 @@
+{
+  "values" : [ {
+    "serviceId" : "init"
+  }, {
+    "serviceId" : "maven"
+  }, {
+    "serviceId" : "github-actions"
+  }, {
+    "serviceId" : "java-base"
+  }, {
+    "serviceId" : "jacoco-check-min-coverage"
+  }, {
+    "serviceId" : "springboot"
+  }, {
+    "serviceId" : "springboot-tomcat"
+  }, {
+    "serviceId" : "springboot-actuator"
+  }, {
+    "serviceId" : "sonar-java-backend-and-frontend"
+  }, {
+    "serviceId" : "frontend-maven-plugin"
+  }, {
+    "serviceId" : "angular-styled"
+  }, {
+    "serviceId" : "springboot-jwt"
+  }, {
+    "serviceId" : "springboot-jwt-basic-auth"
+  } ]
+}
