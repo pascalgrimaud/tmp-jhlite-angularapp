@@ -25,5 +25,7 @@
     "serviceId" : "springboot-jwt"
   }, {
     "serviceId" : "springboot-jwt-basic-auth"
+  }, {
+    "serviceId" : "angular-jwt"
   } ]
 }

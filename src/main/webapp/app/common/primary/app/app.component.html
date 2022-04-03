@@ -1,23 +1,22 @@
-<div id="app">
-  <img alt="Angular logo" class="angular-logo" src="content/images/AngularLogo.svg" />
-  <br />
-  <img alt="JHipster logo" src="../../../../content/images/JHipster-Lite-neon-red.png" />
-  <h1>{{ appName }}: Angular + TypeScript</h1>
-  <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a>
-  </p>
+<div id="app">{{ appName }}: Angular + TypeScript</div>
 
-  <p>
-    <a href="https://angular.io/tutorial" target="_blank" rel="noopener">Angular Documentation</a>
-    |
-    <a href="https://angular.io/cli" target="_blank" rel="noopener">Angular CLI Documentation</a>
-  </p>
+<div [ngSwitch]="account !== null">
+  <form role="form" (ngSubmit)="login()" [formGroup]="loginForm" *ngSwitchCase="false">
+    <div>
+      <label class="username-label" for="username">Login</label>
+      <input type="text" name="username" id="username" formControlName="username" #username />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" formControlName="password" />
+    </div>
+    <button type="submit">Sign in</button>
+  </form>
 
-  <p>
-    Edit
-    <code>src/main/webapp/app/common/primary/app/app.component.ts</code> to test hot module replacement.
-  </p>
+  <div *ngSwitchCase="true">
+    <div>You are logged in as user "{{ account?.login }}".</div>
+    <button (click)="logout()">Logout</button>
+  </div>
 </div>
 
 <router-outlet></router-outlet>
